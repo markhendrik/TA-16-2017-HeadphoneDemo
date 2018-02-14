@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class App {
 
@@ -10,5 +13,10 @@ public class App {
 		Headphone korvaKlapid2 = new Headphone("Samsung");
 		korvaKlapid2.setPrice(154.50);
 		System.out.println(korvaKlapid2);
+		
+		List<String> specs = new ArrayList<>(Arrays.asList("mikrofon", "mürasummutaja"));
+		Headphone korvaklapid3 = new Headphone("Sony", 180, false, specs);
+		korvaklapid3.addSpecification("NFC");
+		System.out.println(korvaklapid3);
 	}
 }
